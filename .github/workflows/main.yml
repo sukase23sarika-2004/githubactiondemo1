@@ -1,21 +1,16 @@
-# name of the workflows/pipeline
-name: github action demo pipeline
-
-# trigger event
+ame: Run streamlit job
 on:
-  push:
-      branches:
-           -main
-
+    push: 
+        branches: 
+        - main
 jobs:
-    demo-job:
-        runs-on: ubuntu-latest  
-        
+    streamlit-job:
+        runs-on: ubuntu-latest
+          
         steps:
-            - name: checkout code
-              uses: actions/checkout@v2
+        - name: Checkout Code
+          uses: actions/checkout@v2
 
-            - name: print message
-              run: echo "welcome to github actions"
 
-        
+        - name: Setup Python
+          run: echo ‘welcome…’
