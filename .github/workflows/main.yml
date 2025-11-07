@@ -1,4 +1,4 @@
-ame: Run streamlit job
+name: Run streamlit job
 on:
     push: 
         branches: 
